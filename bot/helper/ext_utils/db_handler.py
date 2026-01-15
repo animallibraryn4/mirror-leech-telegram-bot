@@ -214,4 +214,5 @@ class DbManager:
         await self.db[name][TgClient.ID].drop()
 
 
-database = DbManager()
+
+database = AsyncIOMotorClient(MONGO_URI)
