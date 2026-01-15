@@ -1,13 +1,13 @@
 from aiofiles import open as aiopen
 from aiofiles.os import path as aiopath
 from importlib import import_module
-from pymongo import AsyncMongoClient
 from pymongo.server_api import ServerApi
 from pymongo.errors import PyMongoError
 
 from ... import LOGGER, user_data, rss_dict, qbit_options
 from ...core.telegram_manager import TgClient
 from ...core.config_manager import Config
+from motor.motor_asyncio import AsyncIOMotorClient
 
 
 class DbManager:
