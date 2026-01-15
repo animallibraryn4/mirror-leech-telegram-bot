@@ -214,5 +214,5 @@ class DbManager:
         await self.db[name][TgClient.ID].drop()
 
 
-
-database = AsyncIOMotorClient()
+#await database.connect()
+database = connect()
