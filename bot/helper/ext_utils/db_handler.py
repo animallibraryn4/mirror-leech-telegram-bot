@@ -215,4 +215,4 @@ class DbManager:
 
 
 
-database = AsyncIOMotorClient(MONGO_URI)
+database = AsyncIOMotorClient()
